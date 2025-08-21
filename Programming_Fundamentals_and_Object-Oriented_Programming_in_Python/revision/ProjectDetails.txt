@@ -1,0 +1,25 @@
+student_tracker/
+│
+├── main.py                   # Entry point, contains main() and user menu
+├── models/
+│   ├── student.py            # Student class, includes student id, name, array of scores, this class can inherit from an abstract class called human that has a name and birth year, and an abstract method to introduce him self
+│   ├── course.py             # Course class, includes course id, name, array of students. Also a method that sorts students according to their average score.
+│
+│
+├── utils/
+│   └── file_handler.py       # File reading/writing
+│
+├── data/
+│   ├── students.txt          # Sample input file id,name,grade1|grade2|grade3
+│   ├── courses.txt           # Sample input file id,name,stud1|stud2|stud3
+│
+
+
+Menu:
+What is your choice:
+1. Show all students
+2. Show all classes
+3. Show students in class (should ask if ranked or not)
+4. Register a new student
+5. Create new class
+6. Save and exit

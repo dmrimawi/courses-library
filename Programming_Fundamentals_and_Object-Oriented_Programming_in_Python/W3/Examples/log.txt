@@ -1,0 +1,5 @@
+dia is wrong
+ali is wrong
+GSG is correct, but 123 is wrong
+GSG is correct, but 1234 is wrong
+GSG is correct, also 123456 is correct

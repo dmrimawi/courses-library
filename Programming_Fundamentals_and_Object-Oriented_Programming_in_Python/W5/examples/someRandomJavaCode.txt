@@ -1,0 +1,41 @@
+Person p = new Person();
+p.role() // I am a person
+
+Person p = new Father();
+p.role() // I am a Father
+
+
+public void roles(Person p) {
+	p.role();
+}
+
+
+public double get_area(Shape s) {
+	return s.area()
+}
+
+Shape c = new Circle()
+Shape r = new Rectangle()
+Shape s = new Square()
+
+System.out.println(get_area(c))
+System.out.println(get_area(r))
+System.out.println(get_area(s))
+
+
+Circle c = new Circle()
+Rectangle r = new Rectangle()
+Square s = new Square()
+
+public double get_area(Circle s) {
+	return s.area()
+}
+
+public double get_area(Rectangle s) {
+	return s.area()
+}
+
+public double get_area(Square s) {
+	return s.area()
+}
+

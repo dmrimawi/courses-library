@@ -1,0 +1,248 @@
+ex1) Area = (1/2) × base × height
+
+- Start
+- Ask the user to enter the base
+- Input b
+- Ask user to enter the height
+- Input h
+- Calculate area as (1/2) * b * h
+- Output area
+- End
+
+ex2) Calculator
+
+- Start
+- Ask the user to enter n1
+- Input n1
+- Ask the user to enter n2
+- Input n2
+- Ask the user to enter op
+- Input op
+- If op is + then
+	. calculate s as n1 + n2
+	. print s
+- Else if op is - then
+	. calculate s as n1 - n2
+	. print s
+- Else if op is * then
+	. calculate s as n1 * n2
+	. print s
+- Else if op is / then
+	. If n2 = 0 then
+		o print mathmatical error
+	. Else
+		o calculate s as n1 / n2
+		o print s
+	. End if
+- Else if op is % then
+	. If n2 = 0 then
+		o print mathmatical error
+	. Else
+		o calculate s as n1 % n2
+		o print s
+	. End if
+- Else
+	print unknown operator
+-End if
+-End
+
+Solution2
+- Start
+- Ask the user to enter n1
+- Input n1
+- Ask the user to enter n2
+- Input n2
+- Ask the user to enter op
+- Input op
+- set result to -1
+- If op is + then
+	. calculate result as n1 + n2
+- Else if op is - then
+	. calculate result  as n1 - n2
+- Else if op is * then
+	. calculate result  as n1 * n2
+- Else if op is / then
+	. If n2 = 0 then
+		o print mathmatical error
+	. Else
+		o calculate result  as n1 / n2
+	. End if
+- Else if op is % then
+	. If n2 = 0 then
+		o print mathmatical error
+	. Else
+		o calculate result  as n1 % n2
+	. End if
+- Else
+	print unknown operator
+-End if
+- print result
+-End
+
+ex3) Max of three numbers:
+
+- Start
+- Ask the user to enter n1
+- Input n1
+- set max to n1
+- Ask the user to enter n2
+- Input n2
+- If n2 > max then
+	. set max to n2
+- End if
+- Ask the user to enter n3
+- Input n3
+- If n3 > max then
+	. set max to n3
+- End if
+- print max
+-End
+
+Solution 2:
+- Start
+- Ask the user to enter n1
+- Input n1
+- Ask the user to enter n2
+- Input n2
+- Ask the user to enter n3
+- Input n3
+- set max to -1
+- If n1 > n2 and n2 > n3 then
+	. set max to n1
+- Else If n2 > n1 and n2 > n3 then
+	. set max to n2
+- Else If n3 > n1 and n3 > n2 then
+	. set max to n2
+- End if
+- print max
+-End
+
+
+ex4) Max between n numbers
+
+- Start
+- Ask the user to enter n
+- Input n
+- set max to -1
+- For i=0 to n do // [0, n)
+	. Ask the user to enter x
+	. Input x
+	. If x > max then
+		o set max to x
+	. End if
+- End for
+- print max
+-End
+
+ex5+6) Failing students / Passing Students / Failure Percentage / Avg
+
+- Start
+- set pass to 0
+- set fail to 0
+- set sum to 0
+- Ask user to enter the grade
+- Input grade
+- while grade not equal -1 do
+	. if grade >= 60 then
+		o Increment pass
+	. else
+		o Increment fail
+	. end if
+	. calculate sum = sum + grade
+	. Ask user to enter the grade
+	. Input grade
+- End while
+- print fail
+- print pass
+- compute failure = fail / (fail + pass)
+- print failure
+- compute avg = sum / (fail + pass)
+- print avg
+- end
+
+ex7) Factorial
+
+- Start
+- Ask the user to enter n
+- Input n
+- set fact to 1
+- if n not equal 0 then // [n, 1)
+	. for i=n to 1 do
+		o calculate fact = fact * i
+	. end for
+- end if
+- print fact
+- end
+
+ex8) Prime number
+
+- Start
+- Ask the user to enter n
+- Input n
+- set flag to 0
+- for i=2 to n do // [2, 17)
+	. if n % i equal 0 then 
+		o set flag to 1
+		o break
+	. end if
+- end for
+- if flag equal 0 then
+	. print prime
+- end if
+- end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

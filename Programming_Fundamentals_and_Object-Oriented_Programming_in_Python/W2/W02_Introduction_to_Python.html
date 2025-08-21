@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programming Fundamentals - Week 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      max-width: 900px;
+    }
+    h1, h2, h3, h4 {
+      color: #2c3e50;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-left: 5px solid #ccc;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    ul {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Programming Fundamentals - Week 2 Lectures</h1>
+<h3>Authors: Refat Othman and Diaeddin Rimawi. </h3>
+<h2>Lecture 1: Introduction to Python & Sequential Programming</h2>
+
+<h3>Lecture Goals:</h3>
+<ul>
+  <li>Familiarize students with the Python programming environment.</li>
+  <li>Understand the basic structure and syntax of a Python program.</li>
+  <li>Learn how to perform sequential operations using variables, input/output, and conditionals.</li>
+  <li>Develop foundational skills for writing basic Python programs involving decisions.</li>
+</ul>
+
+<h4>Topic 1: Installing Python and VS Code</h4>
+<ul>
+  <li><strong>What is Python?</strong><br>
+    Python is a high-level, interpreted programming language known for its simplicity and readability. It is widely used in web development, data analysis, artificial intelligence, automation, and education. Python emphasizes code readability and has a large, supportive community.
+  </li>
+  <li><strong>Install Python from python.org:</strong><br>
+    Guide students to <a href="https://www.python.org/">python.org</a> to download and install the latest version of Python. Explain the importance of adding Python to the system PATH during installation.
+  </li>
+  <li><strong>Install and configure VS Code with Python extension:</strong><br>
+    Introduce Visual Studio Code (VS Code) as a lightweight and powerful code editor. Demonstrate how to install the Python extension and configure it to detect the Python interpreter. Highlight features such as syntax highlighting, IntelliSense, and debugging tools.
+  </li>
+  <li><strong>Run a sample file:</strong></li>
+</ul>
+<pre><code>print("Hello, world!")</code></pre>
+<p>Explain how the interpreter processes the code line by line and produces output.</p>
+
+<h4>Topic 2: Run a Simple Program + Syntax/Runtime Errors</h4>
+<ul>
+  <li><strong>Discuss the structure of a simple program:</strong><br>
+    Describe how Python executes code sequentially, and explain the importance of indentation and syntax.
+  </li>
+  <li><strong>Syntax errors:</strong></li>
+</ul>
+<pre><code>print("Hello"  # missing closing parenthesis
+x == 5         # using comparison without context
+</code></pre>
+<p>Use these to explain error messages and how to interpret them.</p>
+
+<ul>
+  <li><strong>Runtime errors:</strong></li>
+</ul>
+<pre><code>x = int("abc")  # ValueError because 'abc' cannot be converted to an integer
+y = 1 / 0       # ZeroDivisionError
+</code></pre>
+<p>
+  Encourage students to read error messages carefully and use them for debugging. For instance, the <code>ValueError</code> in <code>x = int("abc")</code> occurs because the program attempts to cast the string 'abc' to an integer, which is not permitted—Python cannot interpret non-numeric characters as a valid integer. Understanding the cause of such errors helps students correct their code more efficiently.
+</p>
+
+<h4>Topic 3: Sequential Programming</h4>
+<ul>
+  <li><strong>Variables and data types:</strong><br>
+    Introduce variable declaration and the three basic data types: <code>int</code>, <code>float</code>, and <code>str</code>. Emphasize Python's dynamic typing.
+  </li>
+  <li><strong>Assign values, take input, print output:</strong></li>
+</ul>
+<pre><code>name = input("Enter your name: ")
+print("Hello", name)</code></pre>
+
+<ul>
+  <li><strong>Basic calculations:</strong></li>
+</ul>
+<pre><code>a = float(input("Enter a: "))
+b = float(input("Enter b: "))
+print("Sum:", a + b)</code></pre>
+
+<h4>Exercises:</h4>
+<ul>
+  <li>Read two numbers and calculate their sum and average.</li>
+  <li>Convert a temperature from Celsius to Fahrenheit using the formula: <code>F = C * 9/5 + 32</code>.</li>
+  <li>Calculate and print the perimeter of a rectangle from user input (2 × (length + width)).</li>
+</ul>
+
+<h4>Topic 4: If Statements</h4>
+<ul>
+  <li><strong>Conditional statements overview:</strong><br>
+    Explain decision-making in programs using <code>if</code>, <code>if-else</code>, and <code>if-elif-else</code>. Clarify the role of conditions in altering program flow.
+  </li>
+  <li><strong>Types of if statements:</strong><br>
+    <ul>
+      <li><code>if</code>: Executes a block of code if a condition is true.</li>
+      <li><code>if-else</code>: Provides an alternative block if the condition is false.</li>
+      <li><code>if-elif-else</code>: Allows checking multiple conditions in sequence.</li>
+    </ul>
+  </li>
+  <li><strong>Conditions and operators:</strong><br>
+    Introduce comparison operators: <code>==</code>, <code>!=</code>, <code><</code>, <code>></code>, <code><=</code>, <code>>=</code><br>
+    Explain logical operators: <code>and</code>, <code>or</code>, <code>not</code><br>
+    Mention identity (<code>is</code>) and membership (<code>in</code>) operators briefly for awareness.
+  </li>
+  <li><strong>Example:</strong></li>
+</ul>
+<pre><code>if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+else:
+    print("C or below")</code></pre>
+
+<h4>Exercises:</h4>
+<ul>
+  <li>Compare two numbers and print the greater.</li>
+  <li>Check if a character is inside a string or not.</li>
+  <li>
+    Create a condition where a user is granted access only if both the username and password match predefined values. Use logical operators to combine conditions:
+    <pre><code>username = input("Enter username: ")
+password = input("Enter password: ")
+
+if username == "admin" and password == "1234":
+    print("Login successful")
+else:
+    print("Invalid credentials")</code></pre>
+  </li>
+</ul>
+
+<hr>
+
+<h2>Lecture 2: Arrays and Loops</h2>
+
+<h3>Lecture Goals:</h3>
+<ul>
+  <li>Learn to define and manipulate collections using arrays (lists).</li>
+  <li>Understand and apply iteration using <code>for</code> and <code>while</code> loops.</li>
+  <li>Gain the ability to combine lists and loops to solve common programming problems.</li>
+</ul>
+
+<h4>Topic 1: Arrays</h4>
+<ul>
+  <li><strong>Introduction to lists:</strong><br>
+    Lists in Python are ordered, mutable collections that can hold elements of any data type. They are one of the most versatile and commonly used data structures in Python.
+  </li>
+</ul>
+<pre><code>nums = [1, 2, 3]
+names = ["Ali", "Sara"]
+mixed = [42, "Hello", 3.14]</code></pre>
+
+<ul>
+  <li><strong>Accessing and modifying elements:</strong></li>
+</ul>
+<pre><code>print(nums[0])
+nums[1] = 20
+print(nums)</code></pre>
+
+<ul>
+  <li><strong>Iterating through a list:</strong></li>
+</ul>
+<pre><code>for name in names:
+    print("Hello", name)</code></pre>
+
+<ul>
+  <li><strong>Input from user to fill a list:</strong></li>
+</ul>
+<pre><code>arr = []
+for i in range(3):
+    arr.append(int(input("Enter number: ")))</code></pre>
+
+<ul>
+  <li><strong>Common operations on lists:</strong></li>
+</ul>
+<pre><code>print(len(arr))
+arr.append(99)
+arr.remove(99)
+arr.sort()
+print("Sara" in names)</code></pre>
+
+<h4>Topic 2: Loops</h4>
+<ul>
+  <li><strong>For loop basics:</strong></li>
+</ul>
+<pre><code>for i in range(5):
+    print(i)</code></pre>
+<pre><code>for i in range(1, 10, 2):
+    print(i)</code></pre>
+
+<ul>
+  <li><strong>While loop basics:</strong></li>
+</ul>
+<pre><code>x = 0
+while x < 5:
+    print(x)
+    x += 1</code></pre>
+
+<ul>
+  <li><strong>Combining loops with arrays:</strong></li>
+</ul>
+<pre><code>arr = [5, 3, 8]
+for value in arr:
+    print(value)</code></pre>
+
+<ul>
+  <li><strong>Input validation example:</strong></li>
+</ul>
+<pre><code>password = ""
+while password != "1234":
+    password = input("Enter password: ")
+print("Access granted")</code></pre>
+
+<h4>Exercises:</h4>
+<ul>
+  <li>Print even numbers up to a user-defined number N.</li>
+  <li>Generate and print the multiplication table for a given number.</li>
+  <li>Search for a specific value in a list.</li>
+  <li>Find and print the smallest number in a list.</li>
+  <li>Find the maximum value in a list.</li>
+  <li>Compute the sum of all list elements.</li>
+  <li>Count how many numbers are positive or negative.</li>
+  <li>Print the list in reverse order.</li>
+</ul>
+
+</body>
+</html>

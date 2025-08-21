@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programming Fundamentals - Week 3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      max-width: 900px;
+    }
+    h1, h2, h3, h4 {
+      color: #2c3e50;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-left: 5px solid #ccc;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    ul {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Programming Fundamentals - Week 3 Lectures</h1>
+
+<h3>Authors: Refat Othman and Diaeddin Rimawi</h3>
+
+<h2>Lecture 1: Functions and File Handling in Python</h2>
+
+<h3>Lecture Goals:</h3>
+<ul>
+  <li>Understand the importance of modularity through functions.</li>
+  <li>Learn function types, definitions, parameters, return values, and scope.</li>
+  <li>Understand recursion and how functions can call other functions.</li>
+  <li>Learn how to handle file input and output operations in Python.</li>
+</ul>
+
+<h3>Topic 1: Introduction to Functions</h3>
+<p><strong>What is a function and why we need it?</strong></p>
+<p>A function is a reusable block of code that performs a specific task. It helps reduce redundancy and improves code clarity.</p>
+<pre><code>def greet():
+    print("Hello, welcome to Python!")
+
+greet()</code></pre>
+
+<h3>Topic 2: Function Definitions and Types</h3>
+<p><strong>Function without parameters and no return:</strong></p>
+<pre><code>def say_hello():
+    print("Hello!")
+
+say_hello()</code></pre>
+
+<p><strong>Function with parameters but no return:</strong></p>
+<pre><code>def greet_user(name):
+    print("Hello,", name)
+
+greet_user("Ali")</code></pre>
+
+<p><strong>Function with parameters and a return value:</strong></p>
+<pre><code>def add(a, b):
+    return a + b
+
+result = add(3, 5)
+print(result)</code></pre>
+
+<p><strong>Function without parameters but with return:</strong></p>
+<pre><code>def get_number():
+    return 42
+
+print(get_number())</code></pre>
+
+<h3>Topic 3: Function Calls and Recursion</h3>
+<p><strong>Function calling another function:</strong></p>
+<pre><code>def square(x):
+    return x * x
+
+def print_square(y):
+    print("Square is:", square(y))
+
+print_square(4)</code></pre>
+
+<p><strong>Recursive function (e.g., factorial):</strong></p>
+<pre><code>def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))</code></pre>
+
+<h3>Topic 4: Bubble Sort as a Function</h3>
+<p><strong>Sorting an array using bubble sort:</strong> This function takes a list of numbers and sorts them in ascending order using the bubble sort algorithm.</p>
+<pre><code>def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+numbers = [64, 34, 25, 12, 22, 11, 90]
+bubble_sort(numbers)
+print("Sorted array:", numbers)</code></pre>
+
+<h3>Topic 5: Local and Global Variables</h3>
+<p><strong>Local vs Global Example:</strong></p>
+<pre><code>x = 10  # global variable
+
+def func():
+    x = 5  # local variable
+    print("Local x:", x)
+
+func()
+print("Global x:", x)</code></pre>
+
+<p><strong>Modifying global variable inside function:</strong></p>
+<pre><code>count = 0
+
+def increment():
+    global count
+    count += 1
+
+increment()
+print(count)</code></pre>
+
+<h3>Topic 6: Files in Python</h3>
+
+<p><strong>Writing to a file:</strong></p>
+<pre><code>with open("data.txt", "w") as f:
+    f.write("Hello File\\n")
+    f.write("Python I/O")</code></pre>
+
+<p><strong>Reading from a file:</strong></p>
+<pre><code>import os
+
+if os.path.exists("data.txt"):
+    with open("data.txt", "r") as f:
+        content = f.read()
+        print(content)
+else:
+    print("File does not exist.")</code></pre>
+
+<p><strong>Appending to a file:</strong></p>
+<pre><code>with open("data.txt", "a") as f:
+    f.write("\\nAppended line")</code></pre>
+
+<hr>
+
+<h2>Lecture 2: Practical Python Exercises</h2>
+
+<h3>Lecture Goals:</h3>
+<ul>
+  <li>Reinforce programming fundamentals through practice.</li>
+  <li>Encourage problem solving and structured thinking.</li>
+</ul>
+
+<h3>Exercise 1: Temperature Converter</h3>
+<ul>
+  <li>Write a function that takes a Celsius temperature and returns the Fahrenheit equivalent.</li>
+  <li>Use input/output functions and function call.</li>
+  <li>Save the result to a file.</li>
+</ul>
+
+<h3>Exercise 2: Grade Evaluator</h3>
+<ul>
+  <li>Read a list of student marks from a file (one mark per line).</li>
+  <li>Calculate the average of the class.</li>
+  <li>Display the average on the screen.</li>
+</ul>
+
+<h3>Exercise 3: Number Statistics</h3>
+<ul>
+  <li>Let the user enter a list of integers.</li>
+  <li>Use loops to find max, min, count positives/negatives.</li>
+  <li>Display summary in the console and write it to a file.</li>
+</ul>
+
+<h3>Exercise 4: Login System</h3>
+<ul>
+  <li>Predefine usernames and passwords.</li>
+  <li>Use a loop to validate user input.</li>
+  <li>Use a function for validation.</li>
+  <li>Log login attempts to a file.</li>
+</ul>
+
+<h3>Exercise 5: Recursive Calculator</h3>
+<ul>
+  <li>Implement a recursive function to calculate the power of a number (e.g., a<sup>b</sup>).</li>
+  <li>Create a menu that allows the user to choose to calculate power, square, or exit.</li>
+</ul>
+
+<hr>
+
+<h2>Assignments (To be solved individually by students)</h2>
+
+<h3>Assignment 1: Word Counter</h3>
+<ul>
+  <li>Ask the user for a file name.</li>
+  <li>Count and display the number of words in the file.</li>
+  <li>Also, identify the most frequent word and how many times it appears.</li>
+</ul>
+
+<h3>Assignment 2: Prime Number Analyzer</h3>
+<ul>
+  <li>Let the user input a range of numbers.</li>
+  <li>Use a function to check if a number is prime.</li>
+  <li>Write all prime numbers in that range to a file, one per line.</li>
+</ul>
+
+</body>
+</html>
