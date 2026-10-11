@@ -1,1 +1,4 @@
 __pycache__/
+# Local Python environment and Jupyter-generated files
+venv/
+.ipynb_checkpoints/
