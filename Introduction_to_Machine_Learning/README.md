@@ -1,9 +1,6 @@
 # Introduction to Machine Learning
 
 **Instructor and author.** Diaeddin Rimawi (<dmrimawi@gmail.com>)  
-**Organization.** Gaza Sky Geeks  
-**Duration.** 15 weeks · 30 lectures · 60 teaching hours  
-**Schedule.** Saturdays and Tuesdays, two hours per lecture, from 17 October 2026 to 26 January 2027  
 **Prerequisites.** Basic familiarity with Python is helpful. No previous knowledge of Machine Learning, Data Science, statistics, or probability is assumed.
 
 ## Overview
@@ -43,7 +40,7 @@ By the end of the course, students should be able to:
 
 Course materials will be added to the corresponding week folder as lectures become available. Only published materials are linked below.
 
-| Week | Dates | Saturday lecture | Tuesday lecture |
+| Week | Dates | First lecture | Second lecture |
 |---|---|---|---|
 | **[W1](./W1/)** | 17 & 20 Oct 2026 | **[L01 — From Data to Knowledge: Introduction to Data Science and ML](./W1/L01_From_Data_to_Knowledge.ipynb)** | L02 — Understanding Data: Types, Features, and NumPy Essentials |
 | W2 | 24 & 27 Oct 2026 | L03 — Exploring and Manipulating Data with Pandas | L04 — Visualizing Data and Discovering Patterns |
@@ -61,7 +58,6 @@ Course materials will be added to the corresponding week folder as lectures beco
 | W14 | 16 & 19 Jan 2027 | L27 — Multilayer Perceptrons: Building Neural Networks | L28 — Backpropagation: How Neural Networks Actually Learn |
 | W15 | 23 & 26 Jan 2027 | L29 — Training Neural Networks with Keras and Modern Optimizers | L30 — Designing Effective Neural Networks: From MLPs to Deep Learning |
 
-**Contingency dates:** 30 January and 2 February 2027 (only if needed). The regular teaching schedule concludes on 26 January 2027, before Ramadan 2027.
 
 ## Getting started: Python and Jupyter
 
@@ -173,9 +169,8 @@ Next time, enter the course folder, activate the same `venv`, and launch Jupyter
 
 Each week consists of two two-hour lectures (Saturday and Tuesday). Short interactive questions and experiments are included in the notebooks. **One short assignment is assigned after Tuesday's lecture each week**, connecting the two lectures and introducing a small challenge related to the following week.
 
-The first assignment, **Assignment 01 — Understanding and Exploring a Dataset**, will be assigned after L02. Students will inspect a dataset, recognize observations and features, identify basic data types, formulate useful questions, and note an issue worth investigating later. The assignment is previewed in L01 but is **not due or assigned after L01**.
 
 ## Notes and acknowledgments
 
 - These materials are provided for learning and free reuse under the repository's [license](../LICENSE.md). Corrections and improvements are welcome through issues and pull requests.
-- Selected introductory teaching ideas were informed by Prof. Antonio Liotta's Data Science materials (Free University of Bozen-Bolzano); the L01 notebook provides further references and attribution where relevant. The lecture narrative, activities, and runnable examples have been developed for this course.
+- I would like to thank Prof. Antonio Liotta (Free University of Bozen-Bolzano) for generously sharing his teaching materials, which have served as a source of inspiration for this course.
