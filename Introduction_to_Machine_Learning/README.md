@@ -43,7 +43,7 @@ Course materials will be added to the corresponding week folder as lectures beco
 | Week | Dates | First lecture | Second lecture |
 |---|---|---|---|
 | **[W1](./W1/)** | 17 & 20 Oct 2026 | **[L01 — From Data to Knowledge: Introduction to Data Science and ML](./W1/L01_From_Data_to_Knowledge.ipynb)** | **[L02 — Understanding Data: Types, Features, and NumPy Essentials](./W1/L02_Understanding_Data_and_NumPy.ipynb)** |
-| W2 | 24 & 27 Oct 2026 | L03 — Exploring and Manipulating Data with Pandas | L04 — Visualizing Data and Discovering Patterns |
+| W2 | 24 & 27 Oct 2026 | **[L03 — Exploring and Manipulating Data with Pandas](./W2/L03_Exploring_and_Manipulating_Data_with_Pandas.ipynb)** | L04 — Visualizing Data and Discovering Patterns |
 | W3 | 31 Oct & 3 Nov 2026 | L05 — Descriptive Statistics for Data Science | L06 — Probability, Distributions, and Sampling |
 | W4 | 7 & 10 Nov 2026 | L07 — Data Quality: Cleaning and Understanding Imperfect Data | L08 — Feature Engineering: Transforming Data for Learning |
 | W5 | 14 & 17 Nov 2026 | L09 — Measuring Similarity: Distances and Proximity Measures | L10 — Feature Selection, PCA, and Reliable Preprocessing Pipelines |
