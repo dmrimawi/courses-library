@@ -47,7 +47,7 @@ Course materials will be added to the corresponding week folder as lectures beco
 | **[W3](./W3/)** | 31 Oct & 3 Nov 2026 | **[L05 — Descriptive Statistics for Data Science](./W3/L05_Descriptive_Statistics_for_Data_Science.ipynb)** | **[L06 — Probability, Distributions, and Sampling](./W3/L06_Probability_Distributions_and_Sampling.ipynb)** |
 | **[W4](./W4/)** | 7 & 10 Nov 2026 | **[L07 — Data Quality: Cleaning and Understanding Imperfect Data](./W4/L07_Data_Quality_Cleaning_and_Understanding_Imperfect_Data.ipynb)** | **[L08 — Feature Engineering: Transforming Data for Learning](./W4/L08_Feature_Engineering_Transforming_Data_for_Learning.ipynb)** |
 | **[W5](./W5/)** | 14 & 17 Nov 2026 | **[L09 — Measuring Similarity: Distances and Proximity Measures](./W5/L09_Measuring_Similarity_Distances_and_Proximity_Measures.ipynb)** | **[L10 — Feature Selection, PCA, and Reliable Preprocessing Pipelines](./W5/L10_Feature_Selection_PCA_and_Reliable_Preprocessing_Pipelines.ipynb)** |
-| W6 | 21 & 24 Nov 2026 | L11 — Linear Regression: Predicting Continuous Values | L12 — Understanding Regression Errors and Model Complexity |
+| **[W6](./W6/)** | 21 & 24 Nov 2026 | **[L11 — Linear Regression: Predicting Continuous Values](./W6/L11_Linear_Regression_Predicting_Continuous_Values.ipynb)** | L12 — Understanding Regression Errors and Model Complexity |
 | W7 | 28 Nov & 1 Dec 2026 | L13 — Logistic Regression: Learning to Classify | L14 — Understanding and Evaluating Classification Models |
 | W8 | 5 & 8 Dec 2026 | L15 — K-Nearest Neighbors: Classification Through Similarity | L16 — Decision Trees: Learning from Rules and Information |
 | W9 | 12 & 15 Dec 2026 | L17 — Random Forests: Learning from Multiple Models | L18 — Support Vector Machines and Comparing Classifiers |
